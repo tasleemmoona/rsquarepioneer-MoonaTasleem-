@@ -1,0 +1,84 @@
+body {
+  background-color: orange;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+#div1 {
+	float: left;
+	width: 95.3%;
+	padding: 25px 30px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  background-color: #08414D;
+  color: white;
+  text-align: center;
+}
+
+input[type="submit"], input[type="reset"], button{
+	background-color: #334F63;
+	padding: 10px 20px;
+	color: white;
+	border: none;
+} 
+
+input[type="submit"]:hover, button:hover{
+	background-color: #B7D38C;
+}
+
+input[type="reset"]:hover {
+  background-color: #B7D38C;
+}
+
+input[type="date"], input[type="number"], select {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+input:invalid, select:invalid {
+  border: 2px solid red;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

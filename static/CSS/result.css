@@ -1,0 +1,42 @@
+body {
+	background-color: skyblue;
+}
+
+h1 {
+	position: absolute;
+	top:20%;
+	left: 20%;
+}
+
+table {
+	position: absolute;
+	top:40%;
+}
+
+#bus {
+  font-family: "Algerian";
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#bus td, #bus th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#bus tr {
+	color: white;
+ }
+
+#bus tr:nth-child(even){background-color: grey;}
+#bus tr:nth-child(odd){background-color: #B2AA9D;}
+
+#bus tr:hover {background-color: #ddd;}
+
+#bus th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #49383F;
+  color: white;
+}

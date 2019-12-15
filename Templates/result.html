@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <title>Bus Management System</title>
+    <link rel="stylesheet" href="{% static '/CSS/result.css' %}">
+  </head>
+   
+  <body>
+    <h1>Total diesel cost for buses:</h1>
+    <table id="bus">
+      <tr>
+        <th>Bus</th>
+        <th>Date</th>
+        <th>Diesel Rate</th>
+        <th>Quantity</th>
+        <th>Total Cost</th>
+      </tr>
+      {% for i in num %}
+        <tr>
+        {% for x in li %}
+          <td>{{ x }}</td>
+        {% endfor %}
+        </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
